@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROPCzęstochowa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo ROPCzęstochowa" class="logo">
+        <h1>ROPCzęstochowa</h1>
+    </header>
+    <nav>
+        <a href="#home">Strona Główna</a>
+        <a href="#about">O Nas</a>
+        <a href="#news">Aktualności</a>
+        <a href="#member-panel">Panel Członka</a>
+        <a href="#forum">Forum</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="clearfix">
+            <h2>Witamy na stronie ROPCzęstochowa</h2>
+            <img src="1.png" alt="Grafika główna" class="graphic">
+            <p>Tu znajdziecie informacje o naszej organizacji i naszych działaniach.</p>
+        </section>
+
+        <section id="about" class="clearfix">
+            <h2>O Nas</h2>
+            <img src="2.png" alt="O nas" class="graphic">
+            <p>Jesteśmy organizacją, która działa na rzecz rozwoju przedsiębiorczości w regionie Częstochowy. Nasza misja to wspieranie lokalnych firm i przedsiębiorców poprzez różnorodne inicjatywy i projekty.</p>
+            <p>Od lat współpracujemy z wieloma firmami, pomagając im rozwijać swoje biznesy i osiągać sukcesy na rynku. Nasza organizacja oferuje wsparcie w zakresie doradztwa, szkolenia oraz networking.</p>
+        </section>
+
+        <section id="news" class="clearfix">
+            <h2>Aktualności</h2>
+            <img src="3.png" alt="Aktualności" class="graphic">
+            <div id="newsItems">
+                <div class="news-item">
+                    <h3>Nowy projekt dla lokalnych przedsiębiorców</h3>
+                    <p>Zapraszamy wszystkich lokalnych przedsiębiorców do udziału w naszym nowym projekcie, który ma na celu wspieranie innowacyjności i rozwoju biznesu.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Szkolenie z zarządzania firmą</h3>
+                    <p>W najbliższą środę odbędzie się szkolenie z zakresu zarządzania firmą. Zapraszamy wszystkich zainteresowanych.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="member-panel" class="member-panel">
+            <h2>Panel Członka</h2>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Logo Firmy" class="company-logo" id="companyLogoPreview">
+                <input type="file" id="companyLogo" accept="image/*">
+            </div>
+            <div class="summary" id="memberSummary">
+                <!-- Tutaj będą wyświetlane podsumowanie informacji -->
+            </div>
+            <form id="memberForm">
+                <div class="form-group">
+                    <label for="company-name">Nazwa Firmy:</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Wprowadź nazwę firmy">
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres:</label>
+                    <input type="text" id="address" name="address" placeholder="Wprowadź adres firmy">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Wprowadź numer telefonu">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Wprowadź adres email">
+                </div>
+                <div class="form-group">
+                    <label for="company-info">Informacje o Firmie:</label>
+                    <textarea id="company-info" name="company-info" placeholder="Wprowadź informacje o firmie"></textarea>
+                </div>
+                <button type="submit">Zapisz Informacje</button>
+            </form>
+            <form id="messageForm">
+                <div class="form-group">
+                    <label for="message-subject">Temat Wiadomości:</label>
+                    <input type="text" id="message-subject" name="message-subject" placeholder="Wprowadź temat wiadomości">
+                </div>
+                <div class="form-group">
+                    <label for="message">Treść Wiadomości:</label>
+                    <textarea id="message" name="message" placeholder="Wprowadź treść wiadomości"></textarea>
+                </div>
+                <button type="submit">Wyślij Wiadomość</button>
+            </form>
+        </section>
+
+        <section id="forum" class="forum">
+            <h2>Forum</h2>
+            <div id="forumPosts"></div>
+            <form id="forumForm">
+                <div class="form-group">
+                    <label for="new-topic">Nowy Temat:</label>
+                    <input type="text" id="new-topic" name="new-topic" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-post">Treść Posta:</label>
+                    <textarea id="new-post" name="new-post" required></textarea>
+                </div>
+                <button type="submit">Dodaj Post</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 ROPCzęstochowa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
